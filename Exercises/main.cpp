@@ -29,7 +29,7 @@ using namespace iter;
 void runListExample() {
 	{
 		List<int> alexanderThibault = {1, 3, 4};
-		auto it = ++alexanderThibault.begin(); // Faire ++ sur un itérateur le fait avancer, donc faire ++ sur le résultat de begin() (le premier élément) nous amène au deuxième.
+		auto it = ++alexanderThibault.begin(); // Faire ++ sur un itÃ©rateur le fait avancer, donc faire ++ sur le rÃ©sultat de begin() (le premier Ã©lÃ©ment) nous amÃ¨ne au deuxiÃ¨me.
 		alexanderThibault.insert(it, 2);
 		cout << alexanderThibault << "\n";
 
@@ -45,7 +45,7 @@ void runListExample() {
 	{
 		List<int> michelleCardinal = {69, 420};
 		cout << michelleCardinal << "\n";
-		michelleCardinal.erase(--michelleCardinal.end()); // On ne peut pas erase le end(), car cet élément n'existe pas (il est après la fin de la liste). C'est pour cela que je fait -- sur end() pour avoir un itérateur sur le dernier élément. C'est pas mal la convention en C++.
+		michelleCardinal.erase(--michelleCardinal.end()); // On ne peut pas erase le end(), car cet Ã©lÃ©ment n'existe pas (il est aprÃ¨s la fin de la liste). C'est pour cela que je fait -- sur end() pour avoir un itÃ©rateur sur le dernier Ã©lÃ©ment. C'est pas mal la convention en C++.
 		cout << michelleCardinal << "\n";
 		michelleCardinal.pop_back();
 		cout << michelleCardinal << "\n";
